@@ -4,7 +4,10 @@ local placeId = game.PlaceId
 -- ตารางเก็บ MapId + Script
 local scripts = {
     [142823291] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/refs/heads/main/Script/mm2.lua",
-	  [155615604] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/refs/heads/main/Script/Prsion-LIfe.lua"
+	[155615604] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/refs/heads/main/Script/Prsion-LIfe.lua",
+	[136801880565837] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/refs/heads/main/Script/%5BFPS%5D%20Flick.lua",
+	[126884695634066] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/refs/heads/main/Script/Grow%20a%20Garden.lua",
+	[79546208627805] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/refs/heads/main/Script/99%20nights%20in%20the%20forest.lua"
 }
 
 -- Default Script (ถ้าไม่ตรงแมพ)
