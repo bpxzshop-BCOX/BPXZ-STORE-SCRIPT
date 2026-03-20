@@ -1,0 +1,122 @@
+# BPXZ STORE
+
+*** BPXZ STORE ***
+
+*** 30/11/25 ***
+
+# link
+
+* กันก็อป script
+
+--> [here](https://wearedevs.net/obfuscator)
+* ลิ้งทรี Tree
+
+--> [here](https://linktr.ee/_jwdes)
+# Script Roblox
+
+Get Script
+
+loadstring(game:HttpGet((""), true))()
+
+Key script สร้างรหัส
+
+local KeySystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/OopssSorry/LuaU-Free-Key-System-UI/main/source.lua"))()
+local KeyValid = false
+local response = KeySystem:Init({
+	Debug=false, -- <bool> Prints some output in console when true
+	Title="BlackpopHub | Key System", -- <string or nil> Title of key system
+	Description=nil, -- <string or nil> Description of key system
+	Link="https://discord.gg/3GTra6hD6V", -- <string> String to get key
+	Discord="https://discord.gg/3GTra6hD6V", -- <string or nil> Button to join your discord server
+	SaveKey=false, -- <bool or nil> Just auto save key
+	Verify=function(key) -- <function> Verify is key valid
+		if key=="ใส่รหัสตรงนี้" then
+      KeyValid=true
+			return true
+		else
+			return false
+		end
+	end,
+	GuiParent = game.CoreGui, -- <object or nil> :3
+})
+
+if not response or not KeyValid then return end
+-- วางสคริปด้านล่าง
+
+แจ้งเตือนตอนโหลดสคริป
+
+local StarterGui = game:GetService("StarterGui")
+local function notify(message)
+    StarterGui:SetCore("SendNotification", {
+        Title = "Notification";
+        Text = message;
+        Duration = 5;
+        Icon = "rbxassetid://77466135328105" -- << เปลี่ยนเป็น ID รูปภาพที่คุณต้องการ
+    })
+end
+notify("BlackpopHub Run! by Blackpop Enjoy!")
+
+แจ้งเตือนเว็บฮุกดิสคอร์ด
+
+local url = ""
+
+local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+local  gameId = game.PlaceId
+local Jobid = game.JobId
+local countPlr = #game.Players:GetPlayers()
+local plrname = game.Players.LocalPlayer.Name
+local plrId = game.Players.LocalPlayer.UserId
+
+local data = {
+	content = nil,
+	embeds = {
+		{
+			title = "**Check Players added**",
+			description = "**Players : **"..countPlr,
+			color = 16761344,
+			fields = {
+				{
+					name = "**Players Name**",
+					value = ("```%s```"):format(plrname)
+				},
+				{
+					name = "**Players Id**",
+					value = ("```%d```"):format(plrId)
+				},
+				{
+					name = "**Game Name**",
+					value = ("```%s```"):format(gamename)
+				},
+				{
+					name = "**Game ID**",
+					value = ("```%d```"):format(gameId)
+				},
+				{
+					name = "**Job Id**",
+					value = ("```%s```"):format(Jobid)
+				}
+			},
+			author = {
+				name = "NameMap"
+			},
+			footer = {
+				text = "BlackpopHub Run!"
+			},
+			image = {
+				url = "https://cdn.discordapp.com/attachments/1409697393003200632/1425332056413700196/IMG_5753.png?ex=68e7336b&is=68e5e1eb&hm=d549784eaa5b0a5604fc99050678b8473a1e9d746cd5098d7910b86c38a0b0da&"
+			},
+			thumbnail = {
+				url = "https://cdn.discordapp.com/attachments/1409697393003200632/1425332056413700196/IMG_5753.png?ex=68e7336b&is=68e5e1eb&hm=d549784eaa5b0a5604fc99050678b8473a1e9d746cd5098d7910b86c38a0b0da&"
+			}
+		}
+	},
+}
+
+local  newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {["content-type"] = "application/json"}
+request = http_request or request or HttpPost
+local Hello = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(Hello)
+
+--DataTime.now():ToIsoDate()
