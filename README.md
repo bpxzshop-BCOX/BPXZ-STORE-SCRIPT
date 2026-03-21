@@ -1,3 +1,3 @@
 # BPXZ STORE SCRIPT HERE
 
-https://is.gd/MgaIl9
+https://is.gd/sKrHsI
