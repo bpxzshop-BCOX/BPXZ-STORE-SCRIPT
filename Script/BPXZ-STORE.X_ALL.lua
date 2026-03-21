@@ -8,11 +8,12 @@ local scripts = {
 	[136801880565837] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/%5BFPS%5D%20Flick.lua",
 	[126884695634066] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/Grow%20a%20Garden.lua",
 	[79546208627805] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/99%20nights%20in%20the%20forest.lua",
-	[2753915549] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/blox%20fruits.lua"
+	[2753915549] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/blox%20fruits.lua",
+	[6516141723] = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/Doors.lua"
 }
 
 -- Default Script (ถ้าไม่ตรงแมพ)
-local defaultScript = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/error.lua"
+local defaultScript = "https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/main.lua"
 
 -- ฟังก์ชันโหลด
 local function loadScript(url)
