@@ -1,6 +1,6 @@
 # BPXZ STORE SCRIPT HERE
 ```batch
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/BPXZ-STORE.X_ALL.lua'), true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/bpxzshop-BCOX/BPXZ-STORE-SCRIPT/main/Script/BPXZ.STORE.X.ALL.lua'), true))()
 ```
 รองรับ :
 
