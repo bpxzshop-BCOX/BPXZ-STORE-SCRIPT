@@ -17,6 +17,7 @@
 Get Script
 
 loadstring(game:HttpGet((""), true))()
+loadstring(game:HttpGet((''), true))()
 
 Key script สร้างรหัส
 
